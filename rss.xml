@@ -1,23 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Nov 2021 12:57:02 GMT</lastBuildDate><item><title><![CDATA[10 tips for every software engineer]]></title><description><![CDATA[As a fellow software engineer that has worked for several companies and on various projects since I have joined the industry, these are a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</guid><pubDate>Thu, 04 Nov 2021 09:45:00 GMT</pubDate><content:encoded>&lt;p&gt;As a fellow software engineer that has worked for several companies and on various projects since I have joined the industry, these are a few thoughts I would like to share. These are things I have either reflected upon, experienced or observed during my short carreer so far. Some of the following might sound logical for you  -  excellent ! Nevertheless, I feel it is never enough to emphasize their importance. I decided to write this article because looking back, it is the kind of useful advices I wish I had read 5–7 years ago.&lt;/p&gt;
-&lt;p&gt;The following tips will not help you ace an interview. Like many things in life, becoming a successful software developper takes time and patience. They should be things you apply and keep in mind on your route to getting there!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Nov 2021 19:38:49 GMT</lastBuildDate><item><title><![CDATA[Git habits]]></title><description><![CDATA[We all have certain practices or things we like to do when using software tools. I realised that when it comes to git,
+I have a lot of…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/git-habits/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/git-habits/</guid><pubDate>Tue, 09 Nov 2021 14:30:00 GMT</pubDate><content:encoded>&lt;p&gt;We all have certain practices or things we like to do when using software tools. I realised that when it comes to git,
+I have a lot of personal habits that I use on a daily basis.&lt;/p&gt;
+&lt;h2&gt;1. Use of the command line&lt;/h2&gt;
+&lt;p&gt;First, I &lt;strong&gt;always&lt;/strong&gt;, and I cannot stress that enough… &lt;strong&gt;ALWAYS&lt;/strong&gt; use git from the command line.
+Why, you may ask ? There are 2 main motivations for my case: productivity and control over what I am doing.
+I have seen lots of developpers use integrated tools like git clients or IDE integrated clients. The problem with that approach is that when somethings goes wrong for them, they often need help understanding what’s happening.
+I personnally favor the command line as you gain a lot of time on simple tasks (pulling/pushing to a repo) and helps you have a better understanding as a whole of the tool, especially more advanced commands.&lt;/p&gt;
+&lt;p&gt;If you are under &lt;strong&gt;Linux&lt;/strong&gt;, you probably have it already installed as soon as you open your shell. If not, use your &lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;package manager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are working with &lt;strong&gt;Windows&lt;/strong&gt; (yes we don’t always have the choice 😞), then one of these tools might come in handy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitforwindows.org/&quot;&gt;Git Bash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cmder.net/&quot;&gt;Cmder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://conemu.github.io/&quot;&gt;ConEmu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. Use of aliases&lt;/h2&gt;
+&lt;p&gt;Switching branches, showing the working tree status, committing. Repeating all these commands might be a little tedious. Aliases are the perfect solution to gain time !
+For example, instead of writing &lt;code class=&quot;language-text&quot;&gt;git status&lt;/code&gt;, why not just write &lt;code class=&quot;language-text&quot;&gt;git st&lt;/code&gt;
+&lt;img src=&quot;/d29b78834ef8a77bd8a5ffaaadc5c36f/git-status.png&quot; alt=&quot;Git status&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here are a number of &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases&quot;&gt;aliases&lt;/a&gt; that are very practical:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global alias.co checkout
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global alias.br branch
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global alias.ci commit
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global alias.st status
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config --global alias.last &lt;span class=&quot;token string&quot;&gt;&apos;log -1 HEAD&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;3. Reviewing changes / Patching&lt;/h2&gt;
+&lt;p&gt;All too often, a developper has been working on a functionnality for a couple of hours and at the end of it, finds himself saying: &lt;em&gt;“Okay this is ready, works for me, time to commit my changes”&lt;/em&gt;.
+If you have encountered that situation you realise what is the risk here. You are about to commit, believe you have tested your code and have been careful and meticulous of your craft, but in the end will commit something unwanted (e.g: a typo, a log, an unwanted file etc.).&lt;/p&gt;
+&lt;p&gt;Why does that happen ? Primarily because committing seems easy, and we think that the hardest part of the job is over.
+Also, you might have used one of those cursed commands &lt;code class=&quot;language-text&quot;&gt;git add --all&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;git add .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;em&gt;The commands &lt;code class=&quot;language-text&quot;&gt;git add -A&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;git add --all&lt;/code&gt; are equivalent and will add all changes to the index. On the other hand, &lt;code class=&quot;language-text&quot;&gt;git add .&lt;/code&gt; will stage new files and modifications without deletions on the current directory.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;⚠️If something unwanted is in your current changes, those 2 commands are likely to stage them for commit !&lt;/p&gt;
+&lt;p&gt;An elegant alternative to adding everything in your unstaged changes without reviewing them is to go through &lt;strong&gt;git’s beloved interactive mode&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://git-scm.com/docs/git-add&quot;&gt;git add documentation&lt;/a&gt; explains how &lt;code class=&quot;language-text&quot;&gt;git add -p&lt;/code&gt; works&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Interactively choose hunks of patch between the index and the work tree and add them to the index. This gives the user a chance to review the difference before adding modified contents to the index.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This means that we will get a chance to go through each of our changes and review them before staging them for our next commit.&lt;/p&gt;
+&lt;p&gt;For example, I made the following changes to my code.
+The first change, is intentional, so I approve it.
+However, I do not want to stage the second one, so I reject it.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b8d6b2b8b391f32a747425d832aa8e80/4c917/git-add-p.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjUlEQVQoz22S6W7sIAxG8y53gg1mh0D2bZJp1fd/oKt0tk470hHiB8fYfBTDOp0/tnGd5/28XLbcN6lrct+GOulgTXQ2ehtdyNFG76pgozPeMg6MQ+H6tlmmbt+2r8/1Y18u52GZ6r71uWLEGSHcYeIKgMCbbFLQlVPR+RylMyD5Cdk/LEsBjPA34lnikIXjJkudSCdpa20zmW+44W/k10IFUyi9qbo6dnVos8uRnCanQYnjhsdRifAKIyyYRJSoNJeaIzEkRgSCgCtAA6CezT+Gf8qlRGFEyNonFZKxUWmHyiBZFA64eSff368ojT05L5tON61pO5FyqXVJcBLw3fZt8uttKPkDICyaqR+3edrm5bKtn3s9dvXY1mOXhzZ19TVqE71LIdTRVcfmWCtvoy90k33XxHHo12VY52Gdp30dt3k8Ly6FH4HBDXGHQ1ESCCersVKVkhWpKJnEkqAU8Br1q3mVuebcIHkUlgsHwh6pvEb6R7vJrKAYVMoiBoqRe3dSCjT98OG9fHxP9h+rhYtERCL6pwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git add -p Example&quot;
+        title=&quot;git add -p Example&quot;
+        src=&quot;/static/b8d6b2b8b391f32a747425d832aa8e80/f058b/git-add-p.png&quot;
+        srcset=&quot;/static/b8d6b2b8b391f32a747425d832aa8e80/c26ae/git-add-p.png 158w,
+/static/b8d6b2b8b391f32a747425d832aa8e80/6bdcf/git-add-p.png 315w,
+/static/b8d6b2b8b391f32a747425d832aa8e80/f058b/git-add-p.png 630w,
+/static/b8d6b2b8b391f32a747425d832aa8e80/40601/git-add-p.png 945w,
+/static/b8d6b2b8b391f32a747425d832aa8e80/78612/git-add-p.png 1260w,
+/static/b8d6b2b8b391f32a747425d832aa8e80/4c917/git-add-p.png 1859w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When I run the git status command, I will then see which changes I have stages and which ones aren’t. Therefore, I have reviewed my changes and can safely proceed to commit.
+&lt;img src=&quot;/da7a0fd2198180dbe60fe23ea028dc7b/git-status-after-add.png&quot; alt=&quot;git status after add example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;We can can also apply patching to unstage files using &lt;code class=&quot;language-text&quot;&gt;git reset -p {filename}&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;4. Stashing&lt;/h2&gt;
+&lt;h2&gt;5. Rewriting history / Interactive rebase&lt;/h2&gt;
+&lt;h2&gt;6. Rebasing over merge&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;establishes a source of truth&lt;/li&gt;
+&lt;li&gt;feature base history instead of commit-based&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;merge fast-forward and non fast-forward&lt;/p&gt;</content:encoded></item><item><title><![CDATA[10 tips for every software engineer]]></title><description><![CDATA[As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</guid><pubDate>Thu, 04 Nov 2021 09:45:00 GMT</pubDate><content:encoded>&lt;p&gt;As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few thoughts I would like to share with you. These are things I have either reflected upon, experienced or observed during my short career so far.
+Some of the following might sound obvious to you - excellent! Nevertheless, I feel you can’t overemphasize their importance.
+I decided to write this article because, looking back, it is the kind of advice I wish I had read five to seven years ago.&lt;/p&gt;
+&lt;p&gt;The following tips are not meant to help you ace an interview.
+Like many things in life, becoming a successful software developer takes time and patience.
+They should be things to keep in mind on your route to getting there!&lt;/p&gt;
 &lt;h2&gt;1. Don’t aim to be a good programmer, aim to be a good software engineer&lt;/h2&gt;
-&lt;p&gt;As you may have noticed, I started this article without defining what an engineer actually is.&lt;/p&gt;
-&lt;p&gt;Before I continue explaining this point, let me explain a little bit my background. I graduated from an engineering school in France and work in the Paris region. I don’t presume the terms &lt;a href=&quot;https://en.wikipedia.org/wiki/Engineer#Perception&quot;&gt;“engineer” or “developper” are universal&lt;/a&gt;. If you do search for job opportunities over here, you’ll find: “software engineer”, “software developper”, you might even encounter “software programmer” (yikes!). You’ll rarely find the term “coder” which sounds really bad in french. Sidenote, if you do see that kind of job offer run away ! Even among colleagues or friends, we don’t necessarily all use the same term. Some define themselves as developpers, others as engineers etc.&lt;/p&gt;
+&lt;p&gt;As you may have noticed, I started this article without defining what an engineer is.&lt;/p&gt;
+&lt;p&gt;Before I go on, let me share a little bit my background. I graduated from an engineering school in France and work in Paris.
+I don’t presume the terms &lt;a href=&quot;https://en.wikipedia.org/wiki/Engineer#Perception&quot;&gt;“engineer” or “developper” are universal&lt;/a&gt;.
+If you search for job opportunities over here, you’ll find: “software engineer”, “software developer”, you might even encounter “software programmer” (yikes!).
+You’ll rarely find the term “coder” which sounds really bad in French.
+Indeed, if you do see that kind of job offer run away! Even among colleagues and friends, we don’t all use the same term.
+Some define themselves as developers, others as engineers etc.&lt;/p&gt;
 &lt;p&gt;I will not give exhaustive definitions of these terms, these articles discuss thoroughly the difference:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.com/shakuro/programmer-vs-developer-vs-engineer-91ef374e5033&quot;&gt;Programmer Vs Developer Vs Engineer&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.com/r/?url=https%3A%2F%2Fbuiltin.com%2Frecruiting%2Fsoftware-engineer-vs-programmer&quot;&gt;Software Engineer vs. Programmer: What’s the Difference?&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I will however say this: there is a clear distinction between those terms. I personally don’t make the distinction depending on an academic or job title. I will make one depending on a job description.&lt;/p&gt;
-&lt;p&gt;An engineer will understand a business need and modelize the problem. He will be able to design and implement a solution along as tests that validate the requirements.&lt;/p&gt;
-&lt;p&gt;If you really want to build good software, you can’t be “just coding”. There are many other steps involved in the development process. Coding probably takes 20 to 25% of your time. You should be able to take input from end users, discuss with your colleagues and product owner of the requirements, conceive a sotware architecture, define a technical stack. It is up to you whether you want to be involved in those critical decision-linked tasks. You may want to focus only on “coding”. I have two main objections to that: this is more error prone and I doubt you will be able to work in a mature, agile and self-organized team.&lt;/p&gt;
+&lt;p&gt;I will however say this: there is a clear distinction between these terms.
+I personally don’t make the distinction based on an academic or job title. I do make one based on a job description.&lt;/p&gt;
+&lt;p&gt;An engineer will understand a business need and modelize the problem.
+He will be able to design and implement a solution along with tests that validate the requirements.&lt;/p&gt;
+&lt;p&gt;If you really want to build good software, you can’t be “just coding”.
+There are many other steps involved in the development process. Coding probably takes 20 to 25% of your time.
+You should be able to take input from end-users, discuss the requirements with your colleagues and the product owner, conceive a software architecture, define a technical stack.
+It is up to you whether you want to be involved in those critical decision-linked tasks.
+You may want to focus only on &lt;em&gt;“coding”&lt;/em&gt;. I have two main objections: this is more error-prone and I doubt you will be able to work in a mature, agile and self-organized team.&lt;/p&gt;
 &lt;h2&gt;2. Understand Agile, don’t just apply a process/framework&lt;/h2&gt;
-&lt;p&gt;Today, it it very rare to find people that have never worked or heard of agile methods. You’ve probably experienced working in a team that uses an agile method such as Scrum. But doing scrum by the book is not a measure of your team’s agility. As I matter of fact, I’ve seen very mature agile teams have quite different ceremonies and processes than the ones put forward by the Scrum methodology. On the other hand, some teams apply the method scrupulously but don’t achieve very good results.&lt;/p&gt;
+&lt;p&gt;Today, it is rare to find people that have never worked or heard of agile methods. You’ve probably experienced working in a team that uses an agile method such as Scrum. But doing scrum by the book is not a measure of your team’s agility.
+On the one hand, I’ve seen very mature agile teams have quite different ceremonies and processes than the ones put forward by the Scrum methodology.
+On the other hand, some teams apply the method scrupulously but don’t achieve very good results.&lt;/p&gt;
 &lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/xT1XGOGdyDrL2BTfxK&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/siliconvalleyhbo-xT1XGOGdyDrL2BTfxK&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To understand why you need to put your practices in perspective, I once heard a very inspiring product owner say:&lt;/p&gt;
+&lt;p&gt;To understand why, you need to put your practices in perspective. I once heard a very inspiring product owner say:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“Scrum is to Agility what elections are to a democracy. Just as a country that holds elections is not necessarily a democracy, applying scrum does not guarantee your team is agile.”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Your end goal should always be to strive for agility. At its root, agile is quite straight forward: 4 core values and 12 principles. Looking at the &lt;a href=&quot;https://agilemanifesto.org&quot;&gt;agile manifesto&lt;/a&gt;, you should have a pretty good idea of how well your team is doing.&lt;/p&gt;
-&lt;p&gt;The aim of a framework such as Scrum if to help you on your way to becoming agile. That is why people are keen on applying agile methods. They aren’t an immediate solution, they are a tool.&lt;/p&gt;
+&lt;p&gt;Your end goal should always be to strive for agility. At its root, agile is quite straight forward: 4 core values and 12 principles.
+If you look at the &lt;a href=&quot;https://agilemanifesto.org&quot;&gt;agile manifesto&lt;/a&gt;, you should have a pretty good idea of how well your team is doing.&lt;/p&gt;
+&lt;p&gt;The aim of a framework such as Scrum is to help you on your way to becoming agile. That is why people are keen on applying agile methods. They aren’t an immediate solution, they are a tool.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -41,11 +143,30 @@
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;So of course, I am not telling you to throw away frameworks such as scrum. They will give you a process on your way to agility and do follow the rules strictly at first if you are learning &lt;strong&gt;(SHU)&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Once you are fully comfortable with the method, you can start adapting it to your own needs &lt;strong&gt;(HA)&lt;/strong&gt; and emancipating &lt;strong&gt;(RI)&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2&gt;3. Become a software crasftsman&lt;/h2&gt;
-&lt;p&gt;Don’t be a worker, be a crafstman&lt;/p&gt;
-&lt;p&gt;Design Patterns, Clean Code, Clean Architecture, OOP, Solid Principles&lt;/p&gt;
+&lt;p&gt;So of course, I am not telling you to throw away frameworks such as scrum.
+They will give you a process on your way to agility. Do follow the rules strictly at first if you are learning &lt;strong&gt;(SHU)&lt;/strong&gt;.
+Once you are fully comfortable with the method, you can start adapting it to your own needs &lt;strong&gt;(HA)&lt;/strong&gt; and emancipating &lt;strong&gt;(RI)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;3. Become a software craftsman&lt;/h2&gt;
+&lt;p&gt;If you are just coding to achieve immediate results you are doing something wrong.
+The quality of your code matters!
+There are important software KPIs that you must look after such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unit tests and quality gates&lt;/li&gt;
+&lt;li&gt;The ease to refactor and maintain the codebase&lt;/li&gt;
+&lt;li&gt;Ability to extend the existing codebase&lt;/li&gt;
+&lt;li&gt;Management of dependencies&lt;/li&gt;
+&lt;li&gt;Separation of concerns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you don’t pay attention to these key indicators, you’ll end up building crappy code and crappy code does not scale!
+Whatever reason you are invoking (stakeholder pressure, lack of time, it works on my machine, not knowing the better alternative etc.) can’t justify rushing through the development phase.
+You’ll only end up with short-term customer satisfaction, sacrificing the long-term stability and scalability of your product.&lt;/p&gt;
+&lt;p&gt;I am not saying you should always aim for a perfect code and not settle for less.
+I’m saying that if you know that you are deliberately doing something wrong then you shouldn’t do it.&lt;/p&gt;
+&lt;p&gt;The main difference I see between a junior developer and a senior developer is their ability to foresee difficulties and thus make right choices.
+It is important to understand that code &lt;strong&gt;changes&lt;/strong&gt; rapidly for a number of reasons (technological changes, business changes, architectural changes etc.).
+Thus, you should not only build software to make things work. You should also ensure it will be able to change rapidly at little cost.&lt;/p&gt;
+&lt;p&gt;Again, this takes a lot of time.
+Tools such as: Design Patterns, Clean Code, Clean Architecture, Solid Principles can help to build better quality code.&lt;/p&gt;
 &lt;h2&gt;4. Don’t be a fashion victim / tech zealot&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -69,16 +190,27 @@
         decoding=&quot;async&quot;
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;You can be very enthusiast but avoid being fanatical about new frameworks and novelties in the tech industry. Sure they might be very trendy, extremely popular and bankable on your resume. If you are really interested in them, go ahead, work on them during your free time! However, in the workplace, the choice to work on a certain technology should always be motivated by its need and whether it is suited for your project context. You must keep that in mind when you are choosing your tech stack.&lt;/p&gt;
-&lt;p&gt;The same applies to project guidelines or team practices. Don’t always take them for granted. Even though they might work well for your team and be suited to your size and type of project, they won’t always apply. It is very rare that you’ll encounter a undisputed absolute truth. If you do, I would argue it is not a project or team practice but recognised as a best practice or design pattern.&lt;/p&gt;
-&lt;p&gt;Similarly to fashion or tv series, technology obey the same rules. You might be using the “next best thing” or the “hottest piece of tech” at the moment, these trends don’t last eternally and continuously renew themselves. Furthermore, some languages and tools might be appealing because there are brand new but the concepts or patterns they apply are not. This brings us to the next point.&lt;/p&gt;
+&lt;p&gt;You can be very enthusiastic but avoid being fanatical about new frameworks and novelties in the tech industry.
+Sure they might seem very trendy, popular and bankable on your job resume.
+If you are really interested in them, go ahead, work on them during your free time!
+However, in the workplace, the choice to work on a certain technology should always be motivated by its need and whether it is well-suited for your project context.
+You must keep that in mind when you are choosing your tech stack.&lt;/p&gt;
+&lt;p&gt;The same applies to project guidelines or team practices. Don’t always take them for granted.
+Even though they might work well for your team and be well-suited to your size and type of project, they won’t always apply.
+It is very rare that you’ll encounter a undisputed absolute truth.
+If you do, I would argue it is not a project or team practice but recognised as a best practice or design pattern.&lt;/p&gt;
+&lt;p&gt;Similarly to fashion or tv series, technology obeys the same rules.
+You might be using the “next best thing” or the “hottest piece of tech” at the moment.
+But these trends don’t last eternally and continuously renew themselves.
+Furthermore, some languages and tools might be appealing because they are brand new but the concepts or patterns they apply are not. T
+his brings us to the next point.&lt;/p&gt;
 &lt;h2&gt;5. Understand underlying concepts&lt;/h2&gt;
 &lt;p&gt;Of course, you want to master the languages and tools that you use. However, you should also focus on the broader concepts these tools are built on or use.&lt;/p&gt;
 &lt;p&gt;The following examples list areas you might want to explore if you are interested and use some associated technologies/examples that make use of these:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JVM environment (Java, Kotlin, Scala, Groovy etc.)&lt;/li&gt;
 &lt;li&gt;Inversion of Control / Dependency Injection (Spring framework)&lt;/li&gt;
-&lt;li&gt;Containers  (Docker)&lt;/li&gt;
+&lt;li&gt;Containers (Docker)&lt;/li&gt;
 &lt;li&gt;Virtual DOM (React)&lt;/li&gt;
 &lt;li&gt;Store (Redux)&lt;/li&gt;
 &lt;li&gt;Component approach/ Web components (React, Vue, Polymer etc.)&lt;/li&gt;
@@ -87,8 +219,9 @@
 &lt;li&gt;OpenID Connect (OAuth 2)&lt;/li&gt;
 &lt;li&gt;JavaScript (ES6, ES2020, TypeScript etc.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Lots of people have practiced TypeScript but many don’t fully understand JavaScript code mechanisms.&lt;/p&gt;
-&lt;p&gt;If you really understand a concept you’ll have an undisputable head start regarding those who don’t. You’ll have a deeper understanding of the implementations of that concept and be able to transpose them into other contexts.&lt;/p&gt;
+&lt;p&gt;Many people have practiced TypeScript although they don’t fully understand JavaScript code mechanisms.&lt;/p&gt;
+&lt;p&gt;If you really understand a concept you’ll have an undisputable head start in relation to those who don’t.
+You’ll have a deeper understanding of the implementations of that concept and be able to transpose them to other contexts.&lt;/p&gt;
 &lt;h2&gt;6. Get to the bottom of things&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Boy Scout Rule&lt;/li&gt;
@@ -102,24 +235,31 @@
 &lt;li&gt;Cross-functional knowledge&lt;/li&gt;
 &lt;li&gt;Learn to learn - Flatten the learning curve&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;8. Be Humble &amp;#x26; patient&lt;/h2&gt;
+&lt;h2&gt;8. Be humble &amp;#x26; patient&lt;/h2&gt;
 &lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/5wWf7H89PisM6An8UAU&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/editingandlayout-the-office-michael-scott-5wWf7H89PisM6An8UAU&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When you find yourself explaining something or sharing knowledge with a colleague, you should always remain humble and patient with your audience.&lt;/p&gt;
-&lt;p&gt;Good teachers aren’t the ones that explain the most complicated stuff. They are those who can make complicate and intricate concepts accessible for anyone.&lt;/p&gt;
-&lt;p&gt;If something is hard to understand, you should be able to vulgarize and explain it to an audience. If you find that exercise difficult, you might want to question yourself on whether you truly understand what you are tying to explain. In the past, I have found myself in a situation where I believed I mastered something but explaining it to others was a real challenge. There shouldn’t be any shame in that, it simply means that maybe the extent to which I thought I understood a subject wasn’t as deep as I imagined it to be in the first place.&lt;/p&gt;
+&lt;p&gt;Good teachers aren’t those who explain the most complicated subject.
+They are those who can make complex and intricate concepts accessible to anyone.&lt;/p&gt;
+&lt;p&gt;If something is hard to understand, you should be able to vulgarize and explain it to an audience.
+If you find that exercise difficult, you might want to question yourself on whether you truly understand what you are tying to explain. In the past, I have found myself in a situation where I believed I mastered something but explaining it to others was a real challenge. There shouldn’t be any shame in that, it simply means that maybe the extent to which I thought I understood a subject wasn’t as deep as I imagined it to be in the first place.&lt;/p&gt;
 &lt;p&gt;Also, you should always adapt what you are saying to the person in front of you. You’ll definitely find yourself in situations where you believe someone or yourself to be a slow-learner. Remember where you come from and that no matter your age or experience, there will always be things that some will master quicker than others. We don’t all have the same areas of expertise, experience with the same subjects of same learning reflexes. Generally speaking, don’t blame the audience, question yourself on whether your approach is the best one.&lt;/p&gt;
 &lt;h2&gt;9. Make mistakes… again and again&lt;/h2&gt;
 &lt;div style=&quot;width:100%;height:0;padding-bottom:100%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/67urFpVn7qwcd2gWIl&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/netflix-santa-clarita-diet-67urFpVn7qwcd2gWIl&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“You Miss 100% Of The Shots You Don’t Take” - Wayne Gretzky&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“You Miss 100% Of The Shots You Don’t Take”&lt;/em&gt; - Wayne Gretzky&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;As half-canadian, this quote always was a motto for me. You’ve certainly heard it a hundred different ways. You don’t fail by trying, you fail by not trying. By trying, you may surpass yourself in ways you didn’t think possible. If you do end up failing, you’ll learn a lot from your mistakes. That’s a pretty good trade-off in my opinion.&lt;/p&gt;
+&lt;p&gt;I’m half-Canadian, this quote always was a motto for me. You’ve certainly heard it a hundred different ways. You don’t fail by trying, you fail by not trying. By trying, you may surpass yourself in ways you didn’t think possible. If you do end up failing, you’ll learn a lot from your mistakes. That’s a pretty good trade-off in my opinion.&lt;/p&gt;
 &lt;p&gt;I would even take this a step further and make a parallel with fail-fast designs: detect your mistakes as soon as possible. Detect and learn from them, they will pave the way for your future successes.&lt;/p&gt;
-&lt;p&gt;Now this might sound difficult especially if you are young and are debuting in a certain domain. You might lack a bit of self-confidence or be afraid of making mistakes. For example, you’re trusted to lead a critical feature or to test the integration of a certain framework on your project and give a presentation of your results to your team. This kind of responsibility can impress you at first. I will tell you this: the people that entrusted you with this mission know your potential, so trust yourself and take initiatives. The only regrets you’ll have is if you don’t try hard enough.&lt;/p&gt;
+&lt;p&gt;Now this might sound difficult especially if you are young and just starting out in a certain field.
+You might lack self-confidence or be afraid of making mistakes.
+For example, you’re entrusted to lead a critical feature or to test the integration of a certain framework on your project and give a presentation of your results to your team. T
+his kind of responsibility can be intimidating at first.
+Let me tell you this: the people who entrusted you with this task know your potential, so trust yourself and take initiatives.
+The only regret you’ll have is if you don’t try hard enough.&lt;/p&gt;
 &lt;p&gt;So the main idea is this: get out of your comfort zone! Try new things, give your best and let your creativity flow. Taking risks will benefit you, one way or the other.&lt;/p&gt;
 &lt;h2&gt;10. Adapt continuously&lt;/h2&gt;
-&lt;p&gt;When changes arrive in your work whether they are technical, organizational or human, you should accept them. Furthermore you should welcome change and look at it as a new opportunity&lt;/p&gt;
-&lt;p&gt;Self-retrospectives&lt;/p&gt;
+&lt;p&gt;When changes arrive in your work whether they are technical, organizational or human, you should accept them.
+Furthermore, you should welcome change and look at it as a new opportunity.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;A lot of these guidelines are deeply intertwained.
-Generally speaking, work hard, be pragmattic, curious, get to the bottom of things, continuously assess yourself, have fun&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;A lot of these guidelines are deeply intertwined.
+Generally speaking, work hard, be pragmatic, curious, get to the bottom of things, continuously assess yourself, have fun&lt;/p&gt;</content:encoded></item></channel></rss>
