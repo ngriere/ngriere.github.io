@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
     "result": {"data":{"site":{"siteMetadata":{"title":"ngriere blog"}},"allMarkdownRemark":{"nodes":[{"excerpt":"As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few…","fields":{"slug":"/10-tips-software-engineer/"},"frontmatter":{"date":"November 04, 2021","title":"10 tips for every software engineer","description":"New to the software industry? Wondering what might make the difference between you and another developer in a few years? You've come to the right place!"}}]}},"pageContext":{}},
-    "staticQueryHashes": ["2841359383","3257411868"]}
+    "staticQueryHashes": ["1256260738","1519295995"]}
