@@ -19,7 +19,9 @@ const Seo = ({ description, lang, meta, title }) => {
             title
             description
             social {
-              twitter
+              linkedin
+              github
+              strava
             }
           }
         }
