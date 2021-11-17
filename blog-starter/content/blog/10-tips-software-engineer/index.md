@@ -134,16 +134,31 @@ You'll have a deeper understanding of the implementations of that concept and be
 
 ## 6. Get to the bottom of things
 
-- Boy Scout Rule
-- Always look for the root cause of a problem
-- Don't look for the hacky/short-term solution
+One of the things that makes a great difference between developers is the amount of effort they put in to achieve a particular task. This is not an issue with skill or knowledge. It has more to do with the will to “get to the bottom of things”. It can be seen as a quality but it’s probably more accurate to describe it as a behavior that involves curiosity, discipline, dedication, conscientiousness, among others.
+
+Imagine a situation where you are facing a problem and ask someone for help. Will you be satisfied if that person helped you fix your problem or will you go looking for a comprehensive and fully detailed answer on why it occurred in the first place? This happens a lot in the workplace.
+
+Looking for the root cause of a problem will take you time at first. However, in the long run, you’ll end up saving time because you’ll avoid similar problems in the future or be able to tackle them quickly. Learning from previous mistakes is crucial. Avoiding short-term hacky solutions and seeking a global understanding will get you there.
+
+A principle I value greatly is the [Boy Scout Rule](https://deviq.com/principles/boy-scout-rule).
+Similarly to Boy Scouts that should leave their campground cleaner than when they arrived, developers should follow the rule:
+> *“Leave your code better than you found it.”*
+
+For example, when you are working on a feature or fixing a bug, you will often see things in the code that can be cleaned. I am not saying everything should be refactored at once. There is always a right balance to seek between tackling technical debt where appropriate and leaving things when you are anticipating too much. However, if you find something very dirty, you can’t leave it. Knowing full well and not doing anything about the mess is as unacceptable as littering. 
+
+To summarize, when facing a difficulty, it is better to look for the long-term sustainable solution than leaving things partially resolved.
+
 
 ## 7. Broaden your knowledge / skillset
 
-- Craftmanship: Clean Code, Clean Architecture, Solid principles, Design Patterns etc.
-- DevOps topics
-- Cross-functional knowledge
-- Learn to learn - Flatten the learning curve
+As a developer, you’ll work closely with other IT professionals such as designers, product owners, scrum masters, operations, security. It is important to have a certain amount of knowledge to work well with others. Here are several fields you might want to explore:
+- UX/UI - design systems, design thinking, user experience, accessibility etc.
+- Agility as a whole – practices, principles
+- Product & business knowledge
+- DevOps practices & tools
+- Application & infrastructure security 
+
+Good agile teams are **cross-functional** and so are good developers. Another important motivation is that you’ll constantly learn throughout your career. The more you learn, the better you become at learning, and you’ll flatten your learning curve when you want to explore something new.
 
 ## 8. Be humble & patient
 
@@ -180,11 +195,11 @@ So the main idea is this: get out of your comfort zone! Try new things, give you
 
 ## 10. Adapt continuously
 
-When changes arrive in your work whether they are technical, organizational or human, you should accept them. 
-Furthermore, you should welcome change and look at it as a new opportunity.
+When change arrives in your work whether they are technical, organizational, or human, you should accept them. Furthermore, you should welcome change and look at it as a new opportunity.
 
+You might not appreciate change at first, especially if it introduces additional pressure and constrains our working habits. However, you’ll always learn a lesson out of it. Therefore, despite change being unpleasant sometimes, it can be approached in a philosophical way: “I’ll experience something new”, “I’ll improve my ability to adapt to different situations.”, “I’ll have even more arguments to defend my dislike for this kind of change next time.”, or even “I might like it better that way once I get used to it”. Adopt positive thinking and be open to change because in the end you’ll realize: change happens all the time and there isn’t anything you can do about it. The one thing we can do in response to change is to adapt.
 
 ## Conclusion
 
 A lot of these guidelines are deeply intertwined.
-Generally speaking, work hard, be pragmatic, curious, get to the bottom of things, continuously assess yourself, have fun
+Generally speaking, work hard, be pragmatic, curious, get to the bottom of things, continuously assess yourself and have fun !
