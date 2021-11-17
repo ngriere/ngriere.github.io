@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 12 Nov 2021 00:19:00 GMT</lastBuildDate><item><title><![CDATA[10 tips for every software engineer]]></title><description><![CDATA[As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</guid><pubDate>Thu, 04 Nov 2021 09:45:00 GMT</pubDate><content:encoded>&lt;p&gt;As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few thoughts I would like to share with you. These are things I have either reflected upon, experienced or observed during my short career so far.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Nov 2021 19:29:15 GMT</lastBuildDate><item><title><![CDATA[10 tips for every software engineer]]></title><description><![CDATA[As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/10-tips-software-engineer/</guid><pubDate>Thu, 04 Nov 2021 09:45:00 GMT</pubDate><content:encoded>&lt;p&gt;As a fellow software engineer who has worked for several companies and on various projects since I have joined the industry, here are a few thoughts I would like to share with you. These are things I have either reflected upon, experienced or observed during my short career so far.
 Some of the following might sound obvious to you - excellent! Nevertheless, I feel you can’t overemphasize their importance.
 I decided to write this article because, looking back, it is the kind of advice I wish I had read five to seven years ago.&lt;/p&gt;
 &lt;p&gt;The following tips are not meant to help you ace an interview.
@@ -139,18 +139,26 @@ his brings us to the next point.&lt;/p&gt;
 &lt;p&gt;If you really understand a concept you’ll have an undisputable head start in relation to those who don’t.
 You’ll have a deeper understanding of the implementations of that concept and be able to transpose them to other contexts.&lt;/p&gt;
 &lt;h2&gt;6. Get to the bottom of things&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Boy Scout Rule&lt;/li&gt;
-&lt;li&gt;Always look for the root cause of a problem&lt;/li&gt;
-&lt;li&gt;Don’t look for the hacky/short-term solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;One of the things that makes a great difference between developers is the amount of effort they put in to achieve a particular task. This is not an issue with skill or knowledge. It has more to do with the will to “get to the bottom of things”. It can be seen as a quality but it’s probably more accurate to describe it as a behavior that involves curiosity, discipline, dedication, conscientiousness, among others.&lt;/p&gt;
+&lt;p&gt;Imagine a situation where you are facing a problem and ask someone for help. Will you be satisfied if that person helped you fix your problem or will you go looking for a comprehensive and fully detailed answer on why it occurred in the first place? This happens a lot in the workplace.&lt;/p&gt;
+&lt;p&gt;Looking for the root cause of a problem will take you time at first. However, in the long run, you’ll end up saving time because you’ll avoid similar problems in the future or be able to tackle them quickly. Learning from previous mistakes is crucial. Avoiding short-term hacky solutions and seeking a global understanding will get you there.&lt;/p&gt;
+&lt;p&gt;A principle I value greatly is the &lt;a href=&quot;https://deviq.com/principles/boy-scout-rule&quot;&gt;Boy Scout Rule&lt;/a&gt;.
+Similarly to Boy Scouts that should leave their campground cleaner than when they arrived, developers should follow the rule:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Leave your code better than you found it.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For example, when you are working on a feature or fixing a bug, you will often see things in the code that can be cleaned. I am not saying everything should be refactored at once. There is always a right balance to seek between tackling technical debt where appropriate and leaving things when you are anticipating too much. However, if you find something very dirty, you can’t leave it. Knowing full well and not doing anything about the mess is as unacceptable as littering.&lt;/p&gt;
+&lt;p&gt;To summarize, when facing a difficulty, it is better to look for the long-term sustainable solution than leaving things partially resolved.&lt;/p&gt;
 &lt;h2&gt;7. Broaden your knowledge / skillset&lt;/h2&gt;
+&lt;p&gt;As a developer, you’ll work closely with other IT professionals such as designers, product owners, scrum masters, operations, security. It is important to have a certain amount of knowledge to work well with others. Here are several fields you might want to explore:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Craftmanship: Clean Code, Clean Architecture, Solid principles, Design Patterns etc.&lt;/li&gt;
-&lt;li&gt;DevOps topics&lt;/li&gt;
-&lt;li&gt;Cross-functional knowledge&lt;/li&gt;
-&lt;li&gt;Learn to learn - Flatten the learning curve&lt;/li&gt;
+&lt;li&gt;UX/UI - design systems, design thinking, user experience, accessibility etc.&lt;/li&gt;
+&lt;li&gt;Agility as a whole – practices, principles&lt;/li&gt;
+&lt;li&gt;Product &amp;#x26; business knowledge&lt;/li&gt;
+&lt;li&gt;DevOps practices &amp;#x26; tools&lt;/li&gt;
+&lt;li&gt;Application &amp;#x26; infrastructure security&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Good agile teams are &lt;strong&gt;cross-functional&lt;/strong&gt; and so are good developers. Another important motivation is that you’ll constantly learn throughout your career. The more you learn, the better you become at learning, and you’ll flatten your learning curve when you want to explore something new.&lt;/p&gt;
 &lt;h2&gt;8. Be humble &amp;#x26; patient&lt;/h2&gt;
 &lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/5wWf7H89PisM6An8UAU&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/editingandlayout-the-office-michael-scott-5wWf7H89PisM6An8UAU&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When you find yourself explaining something or sharing knowledge with a colleague, you should always remain humble and patient with your audience.&lt;/p&gt;
@@ -174,8 +182,8 @@ Let me tell you this: the people who entrusted you with this task know your pote
 The only regret you’ll have is if you don’t try hard enough.&lt;/p&gt;
 &lt;p&gt;So the main idea is this: get out of your comfort zone! Try new things, give your best and let your creativity flow. Taking risks will benefit you, one way or the other.&lt;/p&gt;
 &lt;h2&gt;10. Adapt continuously&lt;/h2&gt;
-&lt;p&gt;When changes arrive in your work whether they are technical, organizational or human, you should accept them.
-Furthermore, you should welcome change and look at it as a new opportunity.&lt;/p&gt;
+&lt;p&gt;When change arrives in your work whether they are technical, organizational, or human, you should accept them. Furthermore, you should welcome change and look at it as a new opportunity.&lt;/p&gt;
+&lt;p&gt;You might not appreciate change at first, especially if it introduces additional pressure and constrains our working habits. However, you’ll always learn a lesson out of it. Therefore, despite change being unpleasant sometimes, it can be approached in a philosophical way: “I’ll experience something new”, “I’ll improve my ability to adapt to different situations.”, “I’ll have even more arguments to defend my dislike for this kind of change next time.”, or even “I might like it better that way once I get used to it”. Adopt positive thinking and be open to change because in the end you’ll realize: change happens all the time and there isn’t anything you can do about it. The one thing we can do in response to change is to adapt.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;A lot of these guidelines are deeply intertwined.
-Generally speaking, work hard, be pragmatic, curious, get to the bottom of things, continuously assess yourself, have fun&lt;/p&gt;</content:encoded></item></channel></rss>
+Generally speaking, work hard, be pragmatic, curious, get to the bottom of things, continuously assess yourself and have fun !&lt;/p&gt;</content:encoded></item></channel></rss>
